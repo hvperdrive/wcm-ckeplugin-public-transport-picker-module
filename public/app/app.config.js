@@ -1,12 +1,12 @@
 "use strict";
 
 angular.module("ckeplugin-public-transport-picker_0.0.1")
-    .config([
+	.config([
 
-	"ckeditorPluginsProvider",
-	"ckeditorProvider",
+		"ckeditorPluginsPublicTransportPickerProvider",
+		"ckeditorProvider",
 
-	function(ckeditorPluginsProvider) {
-		ckeditorPluginsProvider.controls.registerAll();
-	},
-]);
+		function(ckeditorPluginsPublicTransportPickerProvider) {
+			ckeditorPluginsPublicTransportPickerProvider.controls.registerAll();
+		},
+	]);

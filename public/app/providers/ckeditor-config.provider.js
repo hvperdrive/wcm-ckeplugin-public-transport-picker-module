@@ -1,7 +1,7 @@
 "use strict";
 
 angular.module("ckeplugin-public-transport-picker_0.0.1")
-    .provider("CKEditorConfig", [
+    .provider("CKEditorConfigPublicTransportPicker", [
 	function membersConfig() {
 
 		this.API = {

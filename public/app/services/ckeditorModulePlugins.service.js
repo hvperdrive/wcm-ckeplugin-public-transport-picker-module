@@ -2,13 +2,13 @@
 
 (function() {
 	angular.module("ckeplugin-public-transport-picker_0.0.1")
-		.service("ckeditorPluginDefinitions", [
+		.service("ckeditorPluginDefinitionsPublicTransportPicker", [
 
-			"CKEditorConfig",
+			"CKEditorConfigPublicTransportPicker",
 			"ckeditorPluginPublicTransportPicker",
 
-			function ckeditorPluginDefinitions(
-				CKEditorConfig,
+			function ckeditorPluginDefinitionsPublicTransportPicker(
+				CKEditorConfigPublicTransportPicker,
 				ckeditorPluginPublicTransportPicker
 			) {
 				var plugins = {};

@@ -2,36 +2,36 @@
 
 (function() {
 	angular.module("ckeplugin-public-transport-picker_0.0.1")
-        .provider("ckeditorPlugins", [
+		.provider("ckeditorPluginsPublicTransportPicker", [
 
-	"$provide",
+			"$provide",
 
-	function ckeditorPluginsProvider($provide) {
+			function ckeditorPluginsProvider($provide) {
 
-		var registerAll = function registerAll() {
-			$provide.decorator("ckeditorService", [
+				var registerAll = function registerAll() {
+					$provide.decorator("ckeditorService", [
 
-				"$delegate",
-				"ckeditorPluginDefinitions",
+						"$delegate",
+						"ckeditorPluginDefinitionsPublicTransportPicker",
 
-				function(ckeditorService, ckeditorPluginDefinitions) {
-					_.forEach(ckeditorPluginDefinitions, function(plugin, name) {
-						ckeditorService.activatePlugin(name, plugin.plugin, plugin.meta);
-					});
+						function(ckeditorService, ckeditorPluginDefinitionsPublicTransportPicker) {
+							_.forEach(ckeditorPluginDefinitionsPublicTransportPicker, function(plugin, name) {
+								ckeditorService.activatePlugin(name, plugin.plugin, plugin.meta);
+							});
 
-					return ckeditorService;
-				},
-			]);
-		};
+							return ckeditorService;
+						},
+					]);
+				};
 
-		this.controls = {
-			registerAll: registerAll,
-		};
+				this.controls = {
+					registerAll: registerAll,
+				};
 
-		this.$get = function get() {
-			return this.controls;
-		};
+				this.$get = function get() {
+					return this.controls;
+				};
 
-	},
-]);
+			},
+		]);
 })();
