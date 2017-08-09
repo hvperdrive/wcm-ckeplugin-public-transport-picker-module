@@ -12,8 +12,8 @@ This module adds the following RTE plugin to the wcm:
 
 ## How to install
 1. Clone or download the zip of this repository.
-2. Run "npm install" in the main folder directory.
-3. Run "gulp build" in the main folder directory.
+2. Run `npm install` in the main folder directory.
+3. Run `gulp build` / `gulp buildPatch` / `gulp buildMinor` / `gulp buildMajor` in the main folder directory.
 4. Upload the zip created by previous steps (located in the "dist" folder).
 
 ## Module development
