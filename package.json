@@ -1,6 +1,6 @@
 {
     "name": "ckeplugin-public-transport-picker",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "CKEditor public transport picker plugin for AM",
     "main": "index.js",
     "keywords": [
