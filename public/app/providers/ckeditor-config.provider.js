@@ -1,22 +1,23 @@
 "use strict";
 
-angular.module("ckeplugin-public-transport-picker_0.0.1")
-    .provider("CKEditorConfigPublicTransportPicker", [
-	function membersConfig() {
+angular.module("ckeplugin-public-transport-picker_1.0.0")
+	.provider("CKEditorConfigPublicTransportPicker", [
+		"MODULE_ENV_CONFIG",
 
-		this.API = {
-			name: "ckeplugin-public-transport-picker",
-			version: "0.0.1",
-			basePath: "app/modules/",
-			assetsBasePath: "/assets/modules/",
-		};
+		function membersConfig(MODULE_ENV_CONFIG) {
+			this.API = {
+				name: MODULE_ENV_CONFIG.angularModule,
+				version: "1.0.0",
+				feDirPath: MODULE_ENV_CONFIG.feDirPath,
+				assetsDirPath: MODULE_ENV_CONFIG.assetsDirPath,
+				cssDirPath: MODULE_ENV_CONFIG.cssDirPath,
+			};
 
-		this.API.moduleVersionName = this.API.name + "_" + this.API.version;
-		this.API.modulePath = this.API.basePath + this.API.moduleVersionName + "/";
-		this.API.assetsPath = this.API.assetsBasePath + this.API.moduleVersionName + "/";
+			this.API.moduleVersionName = this.API.name + "_" + this.API.version;
+			this.API.modulePath = this.API.feDirPath;
 
-		this.$get = function get() {
-			return this.API;
-		};
-	},
-]);
+			this.$get = function get() {
+				return this.API;
+			};
+		},
+	]);
