@@ -1,15 +1,15 @@
 "use strict";
 
 var _ = require("lodash");
+var fs = require("fs");
 var gulp = require("gulp");
 var angularTemplatecache = require("gulp-angular-templatecache");
 var replace = require("gulp-replace");
-var fs = require("fs");
 var packageConfig = JSON.parse(fs.readFileSync("./package.json"));
 
 var name = _.get(packageConfig, "wcmModule.moduleConfig.angularModule", "");
 
-gulp.task("templateCache", function () {
+gulp.task("templateCache", function() {
 	return gulp.src("./public/app/**/*.template.html")
 		.pipe(angularTemplatecache({
 			module: name + "_" + packageConfig.version,
@@ -48,19 +48,19 @@ var bumpAngularModuleVersion = function bumpAngularModuleVersion(version) {
 };
 
 // Bump patch version (x.x.[patch version])
-gulp.task("bumpPatch", function () {
+gulp.task("bumpPatch", function() {
 	var newVersion = bumpVersion(2);
 
 	return bumpAngularModuleVersion(newVersion);
 });
 // Bump minor version(x.[minor version].x)
-gulp.task("bumpMinor", function () {
+gulp.task("bumpMinor", function() {
 	var newVersion = bumpVersion(1);
 
 	return bumpAngularModuleVersion(newVersion);
 });
 // Bump major version([magjor version].x.x)
-gulp.task("bumpMajor", function () {
+gulp.task("bumpMajor", function() {
 	var newVersion = bumpVersion(0);
 
 	return bumpAngularModuleVersion(newVersion);
