@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module("ckeplugin-public-transport-picker_1.0.1")
+angular.module("ckeplugin-public-transport-picker_1.0.2")
 	.config([
 
 		"ckeditorPluginsPublicTransportPickerProvider",
