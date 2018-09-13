@@ -11,13 +11,13 @@
 				this.publicTransportLines = [].concat(
 					trams.map(function(line) {
 						return {
-							name: "Buslijn " + line,
+							name: "Tramlijn " + line,
 							icon: "ov-icon-" + line + "-tramlijn",
 						};
 					}),
 					buses.map(function(line) {
 						return {
-							name: "Tramlijn " + line,
+							name: "Buslijn " + line,
 							icon: "ov-icon-" + line + "-buslijn",
 						};
 					})
