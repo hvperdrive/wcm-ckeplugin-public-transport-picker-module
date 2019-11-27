@@ -1,6 +1,6 @@
 {
   "name": "@wcm/ckeplugin-public-transport-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CKEditor public transport picker plugin for AM",
   "main": "app",
   "keywords": [
