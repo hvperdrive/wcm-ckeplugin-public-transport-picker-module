@@ -12,12 +12,12 @@
   "wcmModule": {
     "angularDirPath": "public/app/",
     "moduleConfig": {
-        "angularModule": "ckeplugin-public-transport-picker",
-        "translationKey": "ckeplugin-public-transport-picker",
-        "navigationItem": false,
-        "authentication": {
-            "requiresLogin": false
-        }
+      "angularModule": "ckeplugin-public-transport-picker",
+      "translationKey": "ckeplugin-public-transport-picker",
+      "navigationItem": false,
+      "authentication": {
+          "requiresLogin": false
+      }
     }
   },
   "author": "Jeroen Valcke",
