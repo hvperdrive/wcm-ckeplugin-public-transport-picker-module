@@ -16,7 +16,7 @@
       "translationKey": "ckeplugin-public-transport-picker",
       "navigationItem": false,
       "authentication": {
-          "requiresLogin": false
+        "requiresLogin": false
       }
     }
   },
