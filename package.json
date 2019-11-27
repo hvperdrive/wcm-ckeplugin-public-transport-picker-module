@@ -1,35 +1,35 @@
 {
-    "name": "@wcm/ckeplugin-public-transport-picker",
-    "version": "1.0.1",
-    "description": "CKEditor public transport picker plugin for AM",
-    "main": "app",
-    "keywords": [
-        "CKEditor",
-        "Public-transport",
-        "Pelorus",
-        "WCM"
-    ],
-    "wcmModule": {
-        "angularDirPath": "public/app/",
-        "moduleConfig": {
-            "angularModule": "ckeplugin-public-transport-picker",
-            "translationKey": "ckeplugin-public-transport-picker",
-            "navigationItem": false,
-            "authentication": {
-                "requiresLogin": false
-            }
+  "name": "@wcm/ckeplugin-public-transport-picker",
+  "version": "1.0.1",
+  "description": "CKEditor public transport picker plugin for AM",
+  "main": "app",
+  "keywords": [
+    "CKEditor",
+    "Public-transport",
+    "Pelorus",
+    "WCM"
+  ],
+  "wcmModule": {
+    "angularDirPath": "public/app/",
+    "moduleConfig": {
+        "angularModule": "ckeplugin-public-transport-picker",
+        "translationKey": "ckeplugin-public-transport-picker",
+        "navigationItem": false,
+        "authentication": {
+            "requiresLogin": false
         }
-    },
-    "author": "Jeroen Valcke",
-    "license": "ISC",
-    "devDependencies": {
-        "@district01/eslint-config": "~1.0.0",
-        "gulp": "^3.9.1",
-        "gulp-angular-templatecache": "~2.0.0",
-        "gulp-clean": "~0.3.2",
-        "gulp-replace": "~0.5.4",
-        "gulp-zip": "~3.2.0",
-        "lodash": "^4.17.4",
-        "run-sequence": "~1.2.2"
     }
+  },
+  "author": "Jeroen Valcke",
+  "license": "ISC",
+  "devDependencies": {
+    "@district01/eslint-config": "~1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "~2.0.0",
+    "gulp-clean": "~0.3.2",
+    "gulp-replace": "~0.5.4",
+    "gulp-zip": "~3.2.0",
+    "lodash": "^4.17.4",
+    "run-sequence": "~1.2.2"
+  }
 }
