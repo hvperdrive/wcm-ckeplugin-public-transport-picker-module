@@ -9,6 +9,9 @@
         "Pelorus",
         "WCM"
     ],
+    "publishConfig": {
+      "@wcm:registry": "https://nexusrepo.antwerpen.be/repository/npm-private/"
+    },
     "wcmModule": {
         "angularDirPath": "public/app/",
         "moduleConfig": {
