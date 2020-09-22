@@ -1,7 +1,7 @@
 "use-strict";
 
 (function() {
-	angular.module("ckeplugin-public-transport-picker_1.0.4")
+	angular.module("ckeplugin-public-transport-picker_1.1.0")
 		.factory("ckeditorPluginPublicTransportPicker", [
 
 			"PublicTransportConfigService",
@@ -52,7 +52,7 @@
 
 								onClick: function(publicTransportLine) {
 									publicTransportLine = JSON.parse(publicTransportLine);
-									editor.insertHtml("<span class=\"" + publicTransportLine.icon + "\">&nbsp;</span>");
+									editor.insertHtml("<span class=\"" + publicTransportLine.icon + "\" aria-label=\"" + publicTransportLine.number + "\">&nbsp;</span>");
 								},
 							});
 						},

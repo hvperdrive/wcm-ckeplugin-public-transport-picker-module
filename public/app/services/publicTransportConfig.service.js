@@ -14,12 +14,14 @@
 						return {
 							name: "Tramlijn " + line,
 							icon: "ov-icon-" + line + "-tramlijn",
+							number: line,
 						};
 					}),
 					buses.map(function(line) {
 						return {
 							name: "Buslijn " + line,
 							icon: "ov-icon-" + line + "-buslijn",
+							number: line,
 						};
 					})
 				);
