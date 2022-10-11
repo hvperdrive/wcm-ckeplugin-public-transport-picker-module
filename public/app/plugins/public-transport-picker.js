@@ -17,7 +17,6 @@
 					},
 					plugin: {
 						init: function(editor) {
-							// TODO: Update with new URL
 							// editor.addContentsCss("https://snawebsiteangular-a.antwerpen.be/assets/styles/ov-icons.min.css");
 							editor.addContentsCss("https://slimnaarantwerpen.be/assets/styles/ov-icons.min.css");
 
