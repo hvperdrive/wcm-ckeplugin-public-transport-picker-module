@@ -1,7 +1,7 @@
 "use-strict";
 
 (function() {
-	angular.module("ckeplugin-public-transport-picker_1.1.0")
+	angular.module("ckeplugin-public-transport-picker_1.1.1")
 		.factory("ckeditorPluginPublicTransportPicker", [
 
 			"PublicTransportConfigService",
@@ -17,6 +17,7 @@
 					},
 					plugin: {
 						init: function(editor) {
+							// TODO: Update with new URL
 							editor.addContentsCss("https://cdn.brandplatform.be/sna/dist/latest/css/ov-icons.min.css");
 
 							editor.ui.addRichCombo("publicTransportPicker", {
