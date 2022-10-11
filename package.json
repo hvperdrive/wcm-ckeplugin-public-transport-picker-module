@@ -1,6 +1,6 @@
 {
     "name": "@wcm/ckeplugin-public-transport-picker",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "CKEditor public transport picker plugin for AM",
     "main": "app",
     "keywords": [
@@ -10,7 +10,7 @@
         "WCM"
     ],
     "publishConfig": {
-      "@wcm:registry": "https://nexusrepo.antwerpen.be/repository/npm-private/"
+        "@wcm:registry": "https://nexusrepo.antwerpen.be/repository/npm-private/"
     },
     "wcmModule": {
         "angularDirPath": "public/app/",

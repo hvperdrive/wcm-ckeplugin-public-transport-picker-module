@@ -1,7 +1,7 @@
 "use-strict";
 
 (function() {
-	angular.module("ckeplugin-public-transport-picker_1.1.0")
+	angular.module("ckeplugin-public-transport-picker_1.1.1")
 		.service("ckeditorPluginDefinitionsPublicTransportPicker", [
 
 			"CKEditorConfigPublicTransportPicker",
